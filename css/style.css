@@ -74,19 +74,10 @@ ul {
   padding: 10px;
 }
 
-.grid__body--grid {
-  display: grid;
-}
-
-.grid__body--inline-grid {
-  display: inline-grid;
-}
-
 .page__section-items:not(:last-child) {
   margin-bottom: 20px;
 }
 
-/* .page__section-item */
 .grid__element {
   background-color: var(--element-color);
   border: 1px solid var(--color-dark);
@@ -95,11 +86,37 @@ ul {
   text-align: center;
 }
 
-/* .inline-grid {
-  display: inline-grid;
-} */
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--color-dark);
+}
+/* ***************************************** */
+
+/* ***** Властивість відображення сітки */
+
+.grid__body--grid {
+  display: grid;
+}
+
+.grid__body--inline-grid {
+  display: inline-grid;
+}
+
+/* ***** Властивість розриву */
+.gap .grid__body--column-gap,
+.gap .grid__body--row-gap,
+.gap .grid__body--gap {
+  grid-template-columns: auto auto auto;
+}
+
+.grid__body--column-gap {
+  column-gap: 50px;
+}
+
+.grid__body--row-gap {
+  row-gap: 50px;
+}
+
+.grid__body--gap {
+  gap: 50px 50px;
 }
