@@ -120,3 +120,28 @@ body {
 .grid__body--gap {
   gap: 50px 50px;
 }
+
+/* ***** Властивості ліній сітки */
+
+.grid-column .grid__element-1 {
+  grid-column: 1 / span 2;
+}
+
+.grid-column .grid__element-4 {
+  grid-column: 2 / span 2;
+}
+
+.grid-column .grid__element-8 {
+  grid-column: 1 / span 3;
+}
+
+.grid-row .grid__element-1 {
+  grid-row: 1 / span 2;
+}
+.grid-row .grid__element-2 {
+  grid-row: 1 / span 3;
+}
+
+.grid-row .grid__element-4 {
+  grid-row: 2 / span 2;
+}
