@@ -222,3 +222,31 @@ body {
 .grid__footer {
   grid-area: footer;
 }
+
+.section-area .grid-body__columns-auto {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid__item--1 {
+  grid-area: 1 / 3;
+}
+
+.grid__item--2 {
+  grid-area: 2 / 3;
+}
+
+.grid__item--3 {
+  grid-area: 1 / 1;
+}
+
+.grid__item--4 {
+  grid-area: 1 / 2;
+}
+
+.grid__item--5 {
+  grid-area: 2 / 1;
+}
+
+.grid__item--6 {
+  grid-area: 2 / 2;
+}
