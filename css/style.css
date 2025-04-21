@@ -177,3 +177,48 @@ body {
 .grid-body__rows-px {
   grid-template-rows: 200px 300px;
 }
+
+/* ***** Імена областей */
+.section-area__container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.grid__inner {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 100px 1fr;
+  column-gap: 15px;
+  grid-template-areas:
+    'header header'
+    'side content'
+    'footer footer';
+}
+
+.grid__header,
+.grid__side,
+.grid__content,
+.grid__footer {
+  padding: 30px;
+  border: 2px solid var(--container-color);
+  margin: 0 0 15px 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+.grid__header {
+  grid-area: header;
+}
+
+.grid__side {
+  grid-area: side;
+}
+
+.grid__content {
+  grid-area: content;
+}
+
+.grid__footer {
+  grid-area: footer;
+}
